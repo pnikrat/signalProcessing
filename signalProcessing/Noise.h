@@ -8,6 +8,5 @@ class Noise :
 public:
 	Noise(void);
 	Noise(double mean, double deviation, int len);
-	~Noise(void);
 };
 

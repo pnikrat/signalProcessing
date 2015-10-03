@@ -19,7 +19,3 @@ Noise::Noise(double mean, double deviation, int len)
 	}
 }
 
-Noise::~Noise(void)
-{
-	delete [] signal_samples;
-}

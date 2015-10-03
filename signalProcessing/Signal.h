@@ -14,13 +14,15 @@ protected:
 
 public:
 	Signal(void);
+	Signal(int len);
 	Signal(const char* pathname);
-	~Signal(void);
+	virtual ~Signal(void);
 
 	double * getSamples(void);
 	int getLength(void);
 	void printValues(void);
 	double mean(void);
 	double stdDeviation(void);
+	Signal convolution(Signal otherSignal);
 };
 
